@@ -1,0 +1,196 @@
+@import '~antd/dist/antd.css';
+$color_one: #0f9cd4;
+body {
+  background-color: antiquewhite;
+}
+.LoginDiv {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 3px 2px 7px #767676;
+}
+.formDiv {
+  width: 100%;
+  height: 100px;
+  background: #e21f2c;
+  &:hover {
+    background: #{$color_one};
+  }
+}
+.steps-content {
+  // min-height: 200px;
+  margin-top: 16px;
+  // padding-top: 80px;
+  // text-align: center;
+  // background-color: #fafafa;
+  // border: 1px dashed #e9e9e9;
+  // border-radius: 2px;
+}
+
+.steps-action {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+// 、、、
+.leftContent {
+  flex: 1;
+  width: 7.5rem;
+  height: auto;
+  margin: -0.2rem 0 0 0;
+  z-index: 3;
+}
+
+.IndexPageStyle {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 30vh;
+  padding: 0 0.4rem 0.9rem 0.5rem;
+  background: #83e9e9 center center no-repeat;
+  background-size: 100% 110%;
+}
+
+.title {
+  position: relative;
+  top: 0.5rem;
+  padding: 0 0 0.2rem 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.25rem;
+  text-align: center;
+  background: #97b83c no-repeat bottom;
+  background-size: 75% 100%;
+}
+
+.leftBottomStyle {
+  position: relative;
+  width: 100%;
+  margin-top: 0.4rem;
+  background-size: 100% 100%;
+}
+
+.h3Style {
+  font-weight: inherit;
+  font-size: 0.1rem;
+}
+
+.scrollboardstyle {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.1rem;
+  //padding: 0.3rem 0.2rem 0.4rem 0.2rem;
+
+  .rows {
+    .row-item {
+      font-size: 10px;
+    }
+  }
+}
+.tablePage {
+  width: 100%;
+  th {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    color: #56baff;
+    background: linear-gradient(0deg, #4b75d5, #4b75d5, #4b75d5);
+    // opacity: 0.2;
+  }
+  // div {
+  //   max-height: 150px;
+  //   overflow: hidden;
+  // }
+  td {
+    width: 50px;
+    color: #fefefe;
+    text-align: center;
+    height: 30px;
+  }
+}
+.tableBody {
+  height: 100px;
+  overflow: hidden;
+  // padding-bottom: 10px;
+  li {
+    display: flex;
+    height: 30px;
+  }
+}
+.tablePage2 {
+  max-height: 150px;
+  overflow: hidden;
+  display: flex;
+  .boxW {
+    width: 100%;
+    overflow: hidden;
+  }
+  .boxN {
+    width: 100%;
+    position: relative;
+  }
+  tr {
+    display: flex;
+  }
+  td {
+    flex: 1;
+  }
+}
+.tableAnimation {
+  animation: scroll 1s;
+  top: -30px;
+}
+@keyframes scroll {
+  from {
+    top: 0;
+  }
+  to {
+    top: -30px;
+  }
+}
+
+.PolarGauge {
+  margin: 100px auto;
+  background: #000;
+  width: 400px;
+  height: 400px;
+}
+.mapBody {
+  position: relative;
+  width: 1202px;
+  height: 802px;
+  background: url(./images/map.jpeg) no-repeat;
+  background-size: 100%;
+  .mapBox {
+    position: absolute;
+    .mapBar {
+      position: absolute;
+      top: 0px;
+      right: 120px;
+      width: 200px;
+      height: 80px;
+      background: orange;
+      padding: 20px;
+      border: 1px soild #e21f2c;
+      border-radius: 25px;
+      animation: myfirst 0.5s;
+    }
+  }
+}
+@keyframes myfirst {
+  from {
+    top: 10px;
+    opacity: 0.2;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
