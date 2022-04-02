@@ -15,6 +15,7 @@ import AntThree from '../page/Antv/index_three'
 import AntFour from '../page/Antv/index_four'
 import AntFive from '../page/Antv/index_five'
 import AntSix from '../page/Antv/index_six'
+import OrJs from '../page/orJs/index'
 function App() {
     return (
         <Router>
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/home' component={Home} />
                 <Route path='/fromModel' component={FromModel} />
                 <Route path='/fromModel2' component={FromModel2} />
+                <Route path='/orJs' component={OrJs} />
                 <Route path='/shuttleBar' component={ShuttleBar} />
                 <Route path='/shuttleBar2' component={ShuttleBar2} />
                 <Route path='/tableModel' component={TableModel} />

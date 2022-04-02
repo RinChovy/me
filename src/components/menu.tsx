@@ -40,6 +40,7 @@ class MenuModel extends React.Component<any, any> {
               <Menu.Item key='/home'>首页 啥也不是</Menu.Item>
               <Menu.Item key='/fromModel'>表单提交</Menu.Item>
               <Menu.Item key='/fromModel2'>表单提交2</Menu.Item>
+              <Menu.Item key='/orJs'>原生js</Menu.Item>
             </SubMenu>
             <SubMenu key='sub2' icon={<LaptopOutlined />} title='不常用功能 2'>
               <Menu.Item key='/shuttleBar'>穿梭栏功能</Menu.Item>
